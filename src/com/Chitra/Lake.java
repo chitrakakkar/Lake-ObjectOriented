@@ -22,6 +22,11 @@ public class Lake
         this.Runtime = runtime;
     }
 
+    //Your code is working, but this DataAnalysis method makes this lake depend on all of the others, and on the Main class having this HashMap.
+    //A more general Lake class should store its name, and a list of times, and be able to return the fastest time from the list.
+    //Then your Main method can store a list of Lakes, and call the getFastestTime() method on each List object, as needed.
+    
+    
     // user defined method to append runtime for lake as key and return a hashmap of key and the runtime list
     public HashMap<String,List<Double>> DataAnalysis(HashMap<String,List<Double>> LakeInfo)
     {
